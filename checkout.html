@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - College Festival 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <h1 class="neon-title">Checkout</h1>
+    </header>
+
+    <main>
+        <form action="process_payment" method="POST">
+            <h2>Complete Your Purchase</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="card">Card Number:</label>
+            <input type="text" id="card" name="card" required>
+
+            <input type="submit" value="Pay Now">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Festival. All rights reserved.</p>
+    </footer>
+</body>
+</html>
