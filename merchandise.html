@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise - College Festival 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .merch-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .merch-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .merch-card h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .merch-card p {
+            color: #555;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .merch-card button {
+            background: #39f;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .merch-card button:hover {
+            background: #1a7abf;
+        }
+
+        .merch-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .merch-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .merch-card {
+                width: 90%;
+                margin: 10px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .merch-card {
+                width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <h1 class="neon-title">Festival Merchandise</h1>
+    </header>
+
+    <main>
+        <section id="merchandise">
+            <div class="merch-container">
+                <div class="merch-card">
+                    <img src="images/tshirt.jpg" alt="Festival T-Shirt">
+                    <h3>Festival T-Shirt</h3>
+                    <p>Price: $20</p>
+                    <button onclick="window.location.href='checkout.html?item=tshirt'">Buy Now</button>
+                </div>
+
+                <div class="merch-card">
+                    <img src="images/cap.jpg" alt="Festival Cap">
+                    <h3>Festival Cap</h3>
+                    <p>Price: $15</p>
+                    <button onclick="window.location.href='checkout.html?item=cap'">Buy Now</button>
+                </div>
+
+                <div class="merch-card">
+                    <img src="images/mug.jpg" alt="Festival Mug">
+                    <h3>Festival Mug</h3>
+                    <p>Price: $10</p>
+                    <button onclick="window.location.href='checkout.html?item=mug'">Buy Now</button>
+                </div>
+
+                <!-- Add more merchandise items here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Festival. All rights reserved.</p>
+    </footer>
+</body>
+</html>
